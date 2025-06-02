@@ -4,9 +4,10 @@ try:
     num2 = float(input("Enter the second number:"))
 except ValueError:
     print("Invalid input. Please enter valid numbers.")
+    exit()
 
 #the operator of choice
-operator_of_choice = input("Choose the operation(+, -, *, /):")
+operator_of_choice = input("Choose the operation (+, -, *, /):")
 
 #operation in action
 
@@ -27,4 +28,4 @@ match operator_of_choice:
             result = num1 / num2
             print(f"The result is {result}")
     case _: 
-        print("Invalid operation. Pleas choose from +, -, *, /.")
+        print("Invalid operation. Please choose from +, -, *, /.")
