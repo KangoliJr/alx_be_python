@@ -6,7 +6,7 @@ except ValueError:
     print("Invalid input. Please enter valid numbers.")
 
 #the operator of choice
-operator_of_choice = input("Choose the operation(+,-,*,/):")
+operator_of_choice = input("Choose the operation(+, -, *, /):")
 
 #operation in action
 
@@ -27,4 +27,4 @@ match operator_of_choice:
             result = num1 / num2
             print(f"The result is {result}")
     case _: 
-        print("Invalid operation")
+        print("Invalid operation. Pleas choose from +, -, *, /.")

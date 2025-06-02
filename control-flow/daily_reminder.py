@@ -17,10 +17,10 @@ match priority:
 
 # time-bound
 if time_bound == 'yes':
-    reminder_message += "that requires immediate attention today!"
+    reminder_message += " that requires immediate attention today!"
 elif time_bound == 'no' and priority == 'low':
-    reminder_message += ". consider completing at your free time."
+    reminder_message += ". Consider completing it when you have free time."
 elif time_bound == 'no':
     reminder_message += "."
     
-print(f"\nReminder: {reminder_message}")
+print(f"Reminder: {reminder_message}")

@@ -1,5 +1,5 @@
 try:
-    number = int(input("Enter the number to see its multiplication table:"))
+    number = int(input("Enter a number to see its multiplication table:"))
 except ValueError:
     print("Invalid input. Please enter a whole number")
     exit()
