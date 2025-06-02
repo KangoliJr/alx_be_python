@@ -7,11 +7,11 @@ except ValueError:
     exit()
 
 #the operator of choice
-operator_of_choice = input("Choose the operation (+, -, *, /):")
+operation = input("Choose the operation (+, -, *, /):")
 
 #operation in action
 
-match operator_of_choice:
+match operation:
     case '+':
         result = num1 + num2
         print(f"The result is {result}")
