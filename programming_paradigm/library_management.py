@@ -11,10 +11,10 @@ class Book:
     def is_available(self):
         return not self._is_checked_out
 
-    def checked_out(self):
+    def check_out(self):
         self._is_checked_out = True
 
-    def returned_book(self):
+    def return_book(self):
         self._is_checked_out = False
 
 
