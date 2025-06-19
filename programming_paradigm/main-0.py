@@ -12,12 +12,13 @@ def main():
     amount = float(params[0]) if params else None
 
     if command == "deposit" and amount is not None:
-        account.deposit(amount)
+        # The deposit method already prints "Deposited: $X.X"
+        account.deposit(amount) 
 
     elif command == "withdraw" and amount is not None:
+        # The withdraw method already prints "Withdrew: $X.X" or "Insufficient funds."
         account.withdraw(amount) 
             
-        
     elif command == "display":
         account.display_balance()
     else:
