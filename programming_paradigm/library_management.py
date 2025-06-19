@@ -11,10 +11,10 @@ class Book:
     def is_available(self):
         return not self._is_checked_out
 
-    def _mark_checked_out(self):
+    def checked_out(self):
         self._is_checked_out = True
 
-    def _mark_returned(self):
+    def returned_book(self):
         self._is_checked_out = False
 
 
@@ -35,7 +35,7 @@ class Library:
             if book.title == title:
                 found = True
                 if book.is_available():
-                    book._mark_checked_out()
+                    book.checked_out()
                     print(f"'{title}' has been successfully checked out.") 
                     return
                 else:
@@ -51,7 +51,7 @@ class Library:
             if book.title == title:
                 found = True
                 if not book.is_available(): 
-                    book._mark_returned()
+                    book.returned_book()
                     print(f"'{title}' has been successfully returned.") 
                     return
                 else:
