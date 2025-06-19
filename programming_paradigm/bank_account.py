@@ -9,7 +9,7 @@ class BankAccount:
         if not isinstance(amount, (int, float)) or amount <=0:
             raise ValueError("deposit amount thats greater than zero")
         self.account_balance += amount
-        print(f"Deposited: ${amount:2f}")
+        print(f"Deposited: ${amount:1f}")
         
     def withdraw(self, amount):
         if not isinstance(amount, (int, float)) or amount <=0:
